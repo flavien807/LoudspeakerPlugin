@@ -47,8 +47,8 @@ public class loudspeakerPluginControlPlugin extends Plugin {
           audioManager.setMode(AudioManager.MODE_IN_COMMUNICATION);
           audioManager.setSpeakerphoneOn(true);
 
-          int maxVolume = audioManager.getStreamMaxVolume(AudioManager.STREAM_VOICE_CALL);
-          audioManager.setStreamVolume(AudioManager.STREAM_VOICE_CALL, maxVolume, 0);
+          // int maxVolume = audioManager.getStreamMaxVolume(AudioManager.STREAM_VOICE_CALL);
+          // audioManager.setStreamVolume(AudioManager.STREAM_VOICE_CALL, maxVolume, 0);
 
           success = true;
           Log.d("SpeakerPlugin", "Mode set to Speaker");
